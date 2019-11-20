@@ -7,7 +7,7 @@ const client = new Client({
 });
 
 client.connect().then((d)=>{
-console.log('postgres conneted')
+console.log('postgres connected')
 
 });
 
