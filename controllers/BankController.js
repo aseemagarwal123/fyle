@@ -1,5 +1,6 @@
 var {client}=require('../server/db')
 const jwt =require("jsonwebtoken");
+
 async function getBankdetails(req, res, next) {
 const query = {
 name: 'fetch-bankdetails',
@@ -17,7 +18,7 @@ async function getBranchdetails(req, res, next) {
     const query = {
     name: 'fetch-branchdetails',
     text: 'SELECT * FROM (branches JOIN banks ON (branches.bank_id = banks.id)) where banks.name=$2 and branches.city=$1 LIMIT $3 OFFSET $4',
-    values: [req.query.city,req.query.bank_name,req.query.limit,req.query.offset]
+    values: [req.query.city,req.query.bank,req.query.limit,req.query.offset]
 }
     client.query(query,(error, response) => {
         if (error)
