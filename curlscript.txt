@@ -2,8 +2,8 @@
 curl  --request GET https://fyle1997.herokuapp.com/v1/api/bankinfo/gettoken
 
 <----------------------------------------branch details--------------------------------------->
-curl --header "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjAuMjU0NTUzMzYwMjQxMjg5NSwiZXhwIjoxNTc0NzA3NDk0LCJpYXQiOjE1NzQyNzU0OTR9.21psZWp9RuaiYfCp73gHE6ezgHqEwgSMBgfqjNnXLDg" --request GET https://fyle1997.herokuapp.com/v1/api/bankinfo//getbranchdetails/MUMBAI/ABHYUDAYA%20COOPERATIVE%20BANK%20LIMITED?limit=5&offset=5 
+curl --header "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjAuMjU0NTUzMzYwMjQxMjg5NSwiZXhwIjoxNTc0NzA3NDk0LCJpYXQiOjE1NzQyNzU0OTR9.21psZWp9RuaiYfCp73gHE6ezgHqEwgSMBgfqjNnXLDg" --request GET https://fyle1997.herokuapp.com/v1/api/bankinfo/getbranchdetails?limit=5&offset=5&city=MUMBAI&bank=THE%20ROYAL%20BANK%20OF%20SCOTLAND%20N%20V
 
 <----------------------------------------bankdetails------------------------------------------->
 
-curl --header "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjAuMjU0NTUzMzYwMjQxMjg5NSwiZXhwIjoxNTc0NzA3NDk0LCJpYXQiOjE1NzQyNzU0OTR9.21psZWp9RuaiYfCp73gHE6ezgHqEwgSMBgfqjNnXLDg" --request GET https://fyle1997.herokuapp.com/v1/api/bankinfo//getbankdetails/RTGS-HO/ABHY0065001
+curl --header "x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjAuMjU0NTUzMzYwMjQxMjg5NSwiZXhwIjoxNTc0NzA3NDk0LCJpYXQiOjE1NzQyNzU0OTR9.21psZWp9RuaiYfCp73gHE6ezgHqEwgSMBgfqjNnXLDg" --request GET https://fyle1997.herokuapp.com/v1/api/bankinfo/getbankdetails?branch=RTGS-HO&ifsc=ABHY0065001
